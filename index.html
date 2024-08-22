@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Insurance Landing Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+    <style>
+        body{
+            overflow-x: hidden;
+        }
+        .container1{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2,auto);
+        }
+        @media only screen and (max-width: 600px){
+            .container1{
+                display: grid;
+                grid-template-columns: repeat(2,2fr);
+                grid-template-rows: repeat(2,auto);
+            }
+        }
+        .box:hover{
+            background-image: url(image14.jpg!s1);
+            background-size: contain;
+            color: white;
+        }
+        .box1:hover{
+            background-color: green;
+            color: white;
+            cursor: pointer;
+        }
+        .menu1{
+            background-image: url('image11.jpg'); 
+            background-size:cover;
+        }
+        #centered{
+             color: green;
+             font-size: x-large;
+             position: absolute;
+             top: 50%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+             opacity: 0;
+        }
+        #centered:hover{
+            opacity: 1;
+            cursor: pointer;
+        }
+        #div1{
+            padding-top: 20px;
+            width: 880px;
+            border-bottom: 2px solid white;
+            height: 50px; 
+            position: absolute; 
+            margin-left: 120px;
+        }
+        @media only screen and (max-width: 1200px){
+            #div1{
+                visibility: hidden;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light pb-3 font-weight-bold">
+    <a class="navbar-brand" href="#">
+        <img src="protect-insurance.jpg" alt="Logo" style="width:100px;" class="rounded "> 
+      </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Get a Quote</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                  Pages
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">page 1</a>
+                  <a class="dropdown-item" href="#">page 2</a>
+                  <a class="dropdown-item" href="#">page 3</a>
+                </div>
+              </li>
+            <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="hero bg-light text-center py-5 text-white menu1">
+    <div class="container">
+        <h1>We Love Your Family</h1>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore saepe tempore,<br> enim sunt omnis officiis!</p>
+        <a href="#" class="btn btn-success">Learn More</a>
+        <div id="div1"></div>
+        <div class="row mt-4">
+            <div class="col-md-3"><div><i class='bx bxs-heart-circle rounded-circle border bg-success ' style="font-size: 25px; padding: 10px;"></i></div> Life Insurance</div>
+            <div class="col-md-3"><div><i class='bx bxs-home rounded-circle border bg-success ' style="font-size: 25px; padding: 10px;"></i></div> Health Insurance</div>
+            <div class="col-md-3"><div><i class='bx bxs-bus rounded-circle border bg-success' style="font-size: 25px; padding: 10px;"></i></div> Travale Insurance</div>
+            <div class="col-md-3"><div><i class='bx bxs-car rounded-circle border bg-success' style="font-size: 25px; padding: 10px;"></i></div> Car Insurance</div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container ">
+        <div class="row align-items-center">
+            <div class="col-md-6">  
+                <p class="text-success">- Contact us</p>
+                <h2>Protect Your Beloved Family</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In totam pariatur delectus molestiae quas at iusto odio nesciunt praesentium est?</p>
+                <a href="#" class="btn btn-success">Contact with Email</a>
+            </div>
+            <div class="col-md-6">
+                <img src="image4.avif" class="img-fluid img1" alt="Family Protection">
+                <div id="centered">
+                    <div style="width: 200px;"> <div class="text-center"><i class='bx bxl-whatsapp bg-success text-white' style="font-size: 40px;"></i></div> <div class="bg-white text-success border-2">1-234-567-789</div> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5 bg-light ">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="image6.avif" class="img-fluid" alt="Happy Couple">
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex">
+                    <div class="pr-4">
+                        <a><div class="border p-3 mb-3 box1">
+                            <i class="fas fa-heart"></i> Life Insurance
+                        </div></a>
+                        <div class="border p-3 mb-3 box1">
+                            <i class="fas fa-home"></i> House Insurance
+                        </div>
+                        <div class="border p-3 mb-3 box1">
+                            <i class="fas fa-plane"></i> Travel Insurance
+                        </div>
+                        <div class="border p-3 box1">
+                            <i class="fas fa-car"></i> Car Insurance
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-success">- Get Quotes</p>
+                        <h2>Protect Your Health In a Holistic Way.</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet.</p>
+                        <a href="#" class="btn btn-success">Get a Quote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <p class="text-success">-  FAQ</p>
+                <h2>Our mission is To Happiness</h2>
+                <ul class="mt-3">
+                    <li>HOW DO I VIEW MY PROOF OF INSURANCE</li>
+                    <li>WHO SHOULD I CALL TO REPORT A LOSS</li>
+                    <div class="toast show mt-2">
+                        <div class="toast-body">
+                          <p class="border-start"> please contact your agent,call 1-234-567-789 access if from our <a href="#">mobile app </a> or log in to <a href="#">online AccountAccess</a></p>
+                        </div>
+                      </div>
+                      
+                    <li>WHAT DO WE DO TO RESTORE THE COVERAGE</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <img src="image5.webp" class="img-fluid" alt="Health Insurance">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container bg-light">
+        <p class="text-success">- Our Vision </p>
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2>We Always Provide The Best Insurance</h2>
+                <div class="toast show mt-4 text-white bg-success">
+                    <div class="toast-body">
+                      <p class="border-start"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima provident cum velit natus modi maxime voluptates consequatur perspiciatis quia accusantium recusandae assumenda ab, nisi in?</p>
+                      <h6>joseph ramos</h6>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-6">
+                <div class="container1">
+                <div style="width: 150px;height: 80px;" class="text-center box border"> <span class="font-weight-bold text-success">8 </span><br> Professional agents</div>
+                <div style="width: 150px;height: 80px;" class="text-center box border"><span class="font-weight-bold text-success">12</span> <br> Insurance Type</div>
+                <div style="width: 150px;height: 80px;" class="text-center box border"><span class="font-weight-bold text-success">1689+</span> <br> Customer Satisfaction</div>
+                <div style="width: 150px;height: 80px;" class="text-center box border"><span class="font-weight-bold text-success">6+</span> <br> Years Of Experience</div>
+                <div style="width: 150px;height: 80px;" class="text-center box border"><span class="font-weight-bold text-success">20 </span><br> Execellent Staff</div>
+                <div style="width: 150px;height: 80px;" class="text-center box border"><span class="font-weight-bold text-success">14+ </span><br> Our Awards </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5 mx-2">
+    <div class="container">
+        <p class="text-success">- Latest News</p>
+        <h2 >Latest News Agent Insurance</h2>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="image7.jpg" class="card-img-top" alt="News">
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque corporis magni enim quasi voluptatum blanditiis?</p>
+                        <a href="#" class="text-success">Learn more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="image8.jpg" class="card-img-top" alt="News">
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam praesentium, unde repudiandae debitis vero mollitia.</p>
+                        <a href="#" class="text-success">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="image7.jpg" class="card-img-top" alt="News">
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente vel nesciunt ipsa cum, animi possimus.</p>
+                        <a href="#" class="text-success">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hero bg-light text-center py-5 text-white" style="background-image: url('image11.jpg'); background-size:cover;">
+    <div class="container">
+        <h3 class="text-decoration-underline">Insurance Travel</h3>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore saepe tempore,<br> enim sunt omnis officiis!</p>
+        <a href="#" class="btn btn-success">Get a Quote</a>
+        
+    </div>
+</section>
+
+<div class="container mt-4">
+    <img src="protect-insurance.jpg" class="mx-auto d-block" alt="logo" style="width: 100px;">
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <h5 class="text-success">ABOUT AGENT</h5>
+            <p class="mt-3">Lorem Ipsum is simply dummy text of the printing and typesing industry. Lorem been industry's standard dummy text ever since unknown printer a galley of type and scrambled.</p>
+            <div style="font-size: 22px; color: green;">
+                <i class='bx bxl-facebook'></i>
+                <i class='bx bxl-google-plus'></i>
+                <i class='bx bxl-twitter'></i>
+                <i class='bx bxl-instagram'></i>
+                <i class='bx bx-basketball' ></i>
+                <i class='bx bxl-behance' ></i>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h5 class="text-success">INSURANCE SERVICES</h5>
+            <ul class="mt-3 link2">
+                <li><a href="#" class="text-dark">Life Insurance</a></li>
+                <li><a href="#" class="text-dark">Health Insurance</a></li>
+                <li><a href="#" class="text-dark">Car Insurance</a></li>
+                <li><a href="#" class="text-dark">Boat Insurance</a></li>
+                <li><a href="#" class="text-dark">Pet Insurance</a></li>
+                <li><a href="#" class="text-dark">Business Insurance</a></li>
+                <li><a href="#" class="text-dark">Travel Insurance</a></li>
+                <li><a href="#" class="text-dark">Insurance Patents</a></li>
+            </ul>
+  </div>
+        <div class="col-md-4">
+            <h5 class="text-success">CONTACT US</h5>
+            <ul class="mt-3" style="list-style-type: none;">
+                <li><i class='bx bxs-phone-call' ></i> +1-234-56789</li>
+                <li><i class='bx bxs-home' ></i> 379 5th Ave New York, United States</li>
+                <li><i class='bx bxs-watch' ></i> Available: 8:00am - 4:00pm <br>Sat - Sun: 9:00am - 4:00pm</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<hr>
+
+<footer>
+    <div class="container text-center">
+        <p>&copy; 2024 Protect. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
